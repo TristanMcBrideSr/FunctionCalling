@@ -18,7 +18,7 @@ from Utils.SkillGraph import  SkillGraph
 # Set These Environment Variables in your .env file or system environment variables
 # PROVIDER=openai or google (default is openai)
 # OPENAI_API_KEY=your_openai_api_key
-# GOOGLE_API_KEY=your_google_api_key
+# GEMINI_API_KEY=your_google_api_key
 
 
 load_dotenv()
@@ -27,7 +27,7 @@ graph = SkillGraph()
 provider = os.getenv("PROVIDER", "openai").lower()
 
 gptClient = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
-genClient = genai.Client(api_key=os.getenv("GOOGLE_API_KEY"))
+genClient = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
 # anthropicClient = anthropic.Anthropic(api_key=os.getenv("ANTHROPIC_API_KEY"))
 # ollamaClient = ollama.Client()
 

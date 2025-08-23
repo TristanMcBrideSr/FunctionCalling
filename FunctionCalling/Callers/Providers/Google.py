@@ -6,7 +6,7 @@ from google.genai import types
 from Utils.SkillGraph import SkillGraph
 
 load_dotenv()
-apiKey = os.getenv("GOOGLE_API_KEY")
+apiKey = os.getenv("GEMINI_API_KEY")
 genClient = genai.Client(api_key=apiKey)
 
 # schemaManager = TypedSchemaManager()
