@@ -29,7 +29,7 @@ graph = SkillGraph()
 provider = os.getenv("PROVIDER", "openai").lower()
 
 systemInstructions = "You are a helpful assistant."
-skills = graph.getAgentCapabilities()
+skills = graph.getAgentSkills()
 actions = graph.getAgentActions()
 
 
